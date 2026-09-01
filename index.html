@@ -682,5 +682,9 @@ footer{background:var(--ink);color:rgba(255,255,255,.72);padding:52px 0 38px}
 document.getElementById('yr').textContent=new Date().getFullYear();
 document.querySelectorAll('#menu a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('menu').classList.remove('open')})});
 </script>
+
+<!-- Vercel Web Analytics (works once enabled in the Vercel dashboard) -->
+<script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments);};</script>
+<script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
