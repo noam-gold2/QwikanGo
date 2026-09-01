@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>קוויק אנד גו · השיווק של העסק המקומי, על טייס אוטומטי</title>
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<meta name="theme-color" content="#004870">
+<meta name="description" content="קוויק אנד גו כותב, מעצב ומפרסם לעסק שלך תוכן קבוע בעברית טבעית ואנושית, ובמקביל מאתר לקוחות שמחפשים אותך בפייסבוק. מבית QwikPage, סוכנות דיגיטל.">
+<meta property="og:title" content="קוויק אנד גו · השיווק של העסק המקומי, על טייס אוטומטי">
+<meta property="og:description" content="תוכן שמתפרסם לבד. לקוחות שלא מתפספסים. מבית QwikPage.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700&amp;family=Rubik:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --ink:#0A2534;
+  --navy:#004870;
+  --navy-deep:#002E48;
+  --cyan:#08C0F8;
+  --cyan-2:#39D2FF;
+  --cyan-ink:#0479A2;
+  --cyan-soft:#E7F6FD;
+  --cyan-tint:#F1FAFE;
+  --mist:#F3F8FB;
+  --line:#DBE7ED;
+  --muted:#5C7583;
+  --bad:#D26B5E;
+  --bad-soft:#FFF4F2;
+  --paper:#FFFFFF;
+  --grad:linear-gradient(120deg,#004870 0%,#0898D0 55%,#08C0F8 100%);
+  --grad-soft:linear-gradient(135deg,#08C0F8,#39D2FF);
+  --shadow-sm:0 8px 26px -16px rgba(0,52,79,.4);
+  --shadow:0 26px 60px -30px rgba(0,52,79,.45);
+  --shadow-lg:0 40px 90px -40px rgba(0,52,79,.5);
+  --r:18px;
+  --r-lg:26px;
+  --wrap:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Assistant',system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.7;font-size:17px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3,h4{font-family:'Rubik',system-ui,sans-serif;font-weight:800;line-height:1.08;letter-spacing:-.02em}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+section{padding:104px 0;position:relative}
+.grad-text{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sec-head{max-width:680px;margin-bottom:52px}
+.sec-head.center{margin-inline:auto;text-align:center}
+.kicker{display:inline-flex;align-items:center;gap:8px;font-family:'Rubik';font-weight:600;font-size:.9rem;color:var(--cyan-ink);background:var(--cyan-soft);border-radius:999px;padding:7px 16px;letter-spacing:0}
+h2.big{font-size:clamp(2rem,4vw,3.15rem);margin-top:18px}
+.sec-head p.dek{font-size:1.2rem;color:var(--muted);margin-top:16px;font-weight:500;max-width:52ch}
+.sec-head.center p.dek{margin-inline:auto}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;font-family:'Rubik';font-weight:600;font-size:1.05rem;padding:16px 32px;border-radius:999px;cursor:pointer;border:0;transition:transform .16s ease,box-shadow .16s ease,background .16s ease;line-height:1}
+.btn-primary{background:var(--grad-soft);color:var(--ink);box-shadow:0 14px 30px -12px rgba(8,192,248,.75)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 20px 38px -12px rgba(8,192,248,.9)}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy:hover{transform:translateY(-2px);background:var(--navy-deep)}
+.btn-ghost{background:#fff;color:var(--navy);border:1.5px solid var(--line)}
+.btn-ghost:hover{border-color:var(--navy);background:var(--mist)}
+
+/* NAV */
+header.nav{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.86);backdrop-filter:saturate(150%) blur(12px);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:74px}
+.brand{display:flex;align-items:center;gap:13px}
+.brand img{height:32px;display:block}
+.brand .mark{height:38px;width:auto}
+.brand .sep{width:1px;height:24px;background:var(--line)}
+.brand .prod{font-family:'Rubik';font-weight:800;font-size:1.15rem;color:var(--navy);letter-spacing:-.01em}
+.nav-links{display:flex;align-items:center;gap:28px}
+.nav-links a.link{font-family:'Rubik';font-weight:500;color:var(--muted);font-size:1rem}
+.nav-links a.link:hover{color:var(--navy)}
+.nav .btn{padding:11px 22px;font-size:.98rem}
+.nav-toggle{display:none;background:none;border:0;font-size:1.7rem;color:var(--navy);cursor:pointer}
+
+/* HERO */
+.hero{padding:78px 0 96px;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;z-index:-2;background:
+  radial-gradient(880px 520px at 88% -6%, #E4F5FD 0%, rgba(228,245,253,0) 58%),
+  radial-gradient(720px 560px at 4% 4%, #EFF8FC 0%, rgba(239,248,252,0) 55%)}
+.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:60px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;font-family:'Rubik';font-weight:600;font-size:.92rem;color:var(--navy);background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 16px;box-shadow:var(--shadow-sm)}
+.eyebrow .dot{width:8px;height:8px;border-radius:50%;background:var(--cyan);box-shadow:0 0 0 4px rgba(8,192,248,.22)}
+.hero h1{font-size:clamp(2.5rem,5.4vw,4.15rem);margin:24px 0 0;letter-spacing:-.03em}
+.hero p.sub{font-size:1.28rem;color:var(--muted);margin-top:22px;max-width:44ch;font-weight:500}
+.hero p.sub b{color:var(--ink);font-weight:700}
+.hero-cta{display:flex;gap:14px;align-items:center;margin-top:34px;flex-wrap:wrap}
+.hero-note{display:flex;align-items:center;gap:8px;font-size:.98rem;color:var(--muted);margin-top:18px}
+.hero-note .c{color:var(--cyan-ink);font-weight:800}
+
+/* hero stage */
+.stage{position:relative;min-height:480px;display:flex;align-items:center;justify-content:center}
+.blob{position:absolute;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(8,192,248,.16),rgba(8,192,248,0) 62%);z-index:-1;filter:blur(2px)}
+.post{width:min(340px,86%);background:#fff;border-radius:22px;box-shadow:var(--shadow-lg);border:1px solid var(--line);overflow:hidden;position:relative;z-index:2}
+.post-hd{display:flex;align-items:center;gap:11px;padding:15px 17px}
+.post-logo{width:40px;height:40px;border-radius:11px;background:var(--grad);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Rubik';font-weight:800;font-size:1.05rem}
+.post-hd .meta{line-height:1.25}
+.post-hd .meta b{font-weight:700;font-size:1rem}
+.post-hd .meta span{font-size:.82rem;color:var(--muted)}
+.post-img{height:186px;background:linear-gradient(140deg,#00406A,#0898D0 60%,#08C0F8);display:flex;align-items:flex-end;padding:20px;color:#fff}
+.post-img .ph{font-family:'Rubik';font-weight:800;font-size:1.45rem;line-height:1.15;letter-spacing:-.02em;text-shadow:0 2px 14px rgba(0,0,0,.25)}
+.post-cap{padding:15px 17px;font-size:1.02rem}
+.post-cap .tags{color:var(--cyan-ink);font-weight:600;font-size:.9rem;margin-top:7px}
+.post-foot{display:flex;align-items:center;gap:8px;padding:0 17px 16px;font-size:.86rem;color:var(--muted)}
+.pub-badge{margin-inline-start:auto;display:inline-flex;align-items:center;gap:6px;background:var(--cyan-soft);color:var(--cyan-ink);font-family:'Rubik';font-weight:600;border-radius:999px;padding:5px 12px;font-size:.82rem}
+.pub-badge .d{width:7px;height:7px;border-radius:50%;background:var(--cyan);animation:pulse 1.6s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(8,192,248,.55)}50%{opacity:.55;box-shadow:0 0 0 6px rgba(8,192,248,0)}}
+
+.cal-chip{position:absolute;top:22px;left:-8px;z-index:3;background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:14px 16px;width:186px}
+.cal-chip .t{font-family:'Rubik';font-weight:700;font-size:.92rem;margin-bottom:10px;display:flex;align-items:center;justify-content:space-between}
+.cal-chip .t b{color:var(--cyan-ink)}
+.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:5px}
+.cal-grid i{aspect-ratio:1;border-radius:5px;background:var(--mist)}
+.cal-grid i.on{background:var(--grad-soft)}
+.lead-chip{position:absolute;bottom:6px;right:-6px;z-index:3;background:var(--navy);color:#fff;border-radius:16px;box-shadow:var(--shadow);padding:13px 16px;display:flex;align-items:center;gap:11px;max-width:250px}
+.lead-chip .rad{width:34px;height:34px;border-radius:50%;background:rgba(8,192,248,.18);display:flex;align-items:center;justify-content:center;flex:none}
+.lead-chip .rad::after{content:"";width:11px;height:11px;border-radius:50%;background:var(--cyan);animation:pulse 1.5s ease-in-out infinite}
+.lead-chip .lt{font-size:.82rem;opacity:.8}
+.lead-chip .lb{font-family:'Rubik';font-weight:600;font-size:.96rem}
+
+/* maker strip */
+.maker{padding:26px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--mist)}
+.maker-in{display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;color:var(--muted);font-family:'Rubik';font-weight:500}
+.maker-in img{height:26px;opacity:.95}
+
+/* PROBLEM */
+.problems{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.prob{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:30px 30px 32px;position:relative;overflow:hidden}
+.prob::before{content:"";position:absolute;inset-inline-start:0;top:0;bottom:0;width:4px;background:var(--grad-soft);opacity:.9}
+.prob .ic{width:46px;height:46px;border-radius:12px;background:var(--cyan-soft);color:var(--cyan-ink);display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.prob h3{font-size:1.32rem;font-weight:700;margin-bottom:8px}
+.prob p{color:var(--muted);font-size:1.05rem}
+
+/* SOLUTION */
+.sol{background:linear-gradient(180deg,var(--cyan-tint),#fff)}
+.flow{display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;margin-top:8px}
+.flow-box{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px 26px;font-family:'Rubik';font-weight:700;font-size:1.12rem;color:var(--navy);box-shadow:var(--shadow-sm);display:flex;align-items:center;gap:12px}
+.flow-box .n{width:34px;height:34px;border-radius:9px;background:var(--cyan-soft);color:var(--cyan-ink);display:flex;align-items:center;justify-content:center;font-size:1.1rem}
+.flow-op{font-family:'Rubik';font-weight:800;font-size:1.6rem;color:var(--cyan-ink)}
+.flow-box.out{background:var(--grad);color:#fff;border:0}
+.flow-box.out .n{background:rgba(255,255,255,.2);color:#fff}
+
+/* VALUE */
+.value-callout{max-width:840px;margin:48px auto 0;background:linear-gradient(155deg,var(--navy),var(--navy-deep));color:#fff;border-radius:var(--r-lg);padding:46px 42px;text-align:center;box-shadow:var(--shadow-lg);position:relative;overflow:hidden}
+.value-callout::before{content:"";position:absolute;top:-42%;inset-inline-start:-8%;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,rgba(8,192,248,.22),rgba(8,192,248,0) 65%)}
+.vc-line{position:relative;font-family:'Rubik';font-weight:700;font-size:clamp(1.3rem,2.5vw,1.85rem);line-height:1.35;letter-spacing:-.01em}
+.vc-line b{font-weight:800}
+.vc-line .hl{color:var(--cyan-2);font-weight:800}
+
+/* MODULES */
+.mod{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.mod+.mod{margin-top:96px}
+.mod .kicker{margin-bottom:16px}
+.mod h2{font-size:clamp(1.8rem,3.2vw,2.6rem)}
+.mod .lead{color:var(--muted);font-size:1.18rem;margin:14px 0 4px}
+.mlist{list-style:none;margin-top:20px;display:flex;flex-direction:column;gap:15px}
+.mlist li,.mlist{list-style:none}
+.mod .mlist{list-style:none;margin-top:22px;display:flex;flex-direction:column;gap:15px}
+.mod .mlist li{display:flex;gap:13px;align-items:flex-start;font-size:1.1rem}
+.mod .mlist .tk{flex:none;width:28px;height:28px;border-radius:9px;margin-top:2px;background:var(--grad-soft);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.9rem;box-shadow:0 6px 14px -6px rgba(8,192,248,.7)}
+
+.panel{border-radius:var(--r-lg);padding:34px;position:relative;overflow:hidden;min-height:400px}
+.panel.tint{background:radial-gradient(600px 400px at 20% 0%, #E8F6FD, #F4FAFD);border:1px solid var(--line)}
+.panel.dark{background:linear-gradient(155deg,var(--navy),var(--navy-deep));color:#fff;box-shadow:var(--shadow)}
+.panel .plabel{font-family:'Rubik';font-weight:600;font-size:.92rem;opacity:.9;margin-bottom:18px;display:flex;align-items:center;gap:8px}
+.panel.dark .plabel{opacity:.85}
+.panel .plabel .lv{width:8px;height:8px;border-radius:50%;background:var(--cyan);animation:pulse 1.6s infinite}
+
+/* content planner mock */
+.planner{background:#fff;border-radius:16px;box-shadow:var(--shadow);border:1px solid var(--line);overflow:hidden}
+.planner .ph{display:flex;align-items:center;gap:9px;padding:14px 16px;border-bottom:1px solid var(--line);font-family:'Rubik';font-weight:700;font-size:.98rem}
+.planner .ph .dot{width:9px;height:9px;border-radius:50%;background:var(--grad-soft)}
+.pl-row{display:flex;align-items:center;gap:12px;padding:13px 16px;border-bottom:1px solid var(--line)}
+.pl-row:last-child{border-bottom:0}
+.pl-thumb{width:46px;height:46px;border-radius:10px;flex:none;background:var(--grad)}
+.pl-thumb.v2{background:linear-gradient(140deg,#0898D0,#39D2FF)}
+.pl-thumb.v3{background:linear-gradient(140deg,#00406A,#0898D0)}
+.pl-row .txt{flex:1;min-width:0}
+.pl-row .txt b{font-weight:700;font-size:.98rem;display:block}
+.pl-row .txt span{font-size:.84rem;color:var(--muted)}
+.pl-tag{font-family:'Rubik';font-weight:600;font-size:.76rem;border-radius:999px;padding:4px 11px;flex:none}
+.pl-tag.done{background:var(--cyan-soft);color:var(--cyan-ink)}
+.pl-tag.sched{background:var(--mist);color:var(--muted)}
+
+/* lead feed mock */
+.mini-alert{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:14px;padding:15px 17px}
+.mini-alert+.mini-alert{margin-top:13px}
+.mini-alert .ma-top{display:flex;align-items:center;gap:8px;font-size:.84rem;opacity:.82;margin-bottom:9px}
+.mini-alert .ma-top .d{width:7px;height:7px;border-radius:50%;background:var(--cyan)}
+.mini-alert .ma-txt{font-weight:600;font-size:1.04rem}
+.mini-alert .ma-bot{display:flex;align-items:center;justify-content:space-between;margin-top:12px}
+.ma-tag{font-family:'Rubik';font-weight:700;font-size:.8rem;color:var(--navy);background:var(--cyan);border-radius:999px;padding:4px 12px}
+.ma-act{font-family:'Rubik';font-weight:600;font-size:.86rem;color:var(--cyan-2)}
+
+/* BEFORE/AFTER */
+.compare{background:var(--mist)}
+.ba{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:8px}
+.ba-card{border-radius:var(--r-lg);padding:34px;background:#fff}
+.ba-card.before{border:1px solid #F2D9D4;background:linear-gradient(180deg,var(--bad-soft),#fff)}
+.ba-card.after{border:1px solid var(--cyan);background:linear-gradient(180deg,var(--cyan-soft),#fff);box-shadow:var(--shadow)}
+.ba-h{display:flex;align-items:center;gap:12px;margin-bottom:22px}
+.ba-badge{width:40px;height:40px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.2rem;flex:none}
+.before .ba-badge{background:#F7E2DD;color:var(--bad)}
+.after .ba-badge{background:var(--grad-soft);color:#fff}
+.ba-h .ttl{font-family:'Rubik';font-weight:800;font-size:1.35rem}
+.before .ba-h .ttl{color:var(--bad)}
+.after .ba-h .ttl{color:var(--navy)}
+.ba-list{list-style:none;display:flex;flex-direction:column;gap:16px}
+.ba-list li{display:flex;gap:12px;align-items:flex-start;font-size:1.06rem}
+.ba-list .m{flex:none;width:24px;height:24px;border-radius:7px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.85rem;margin-top:2px}
+.before .m{background:#F7E2DD;color:var(--bad)}
+.after .m{background:var(--grad-soft);color:#fff}
+.before .ba-list li{color:var(--muted)}
+
+/* PRICING */
+.pricing{background:linear-gradient(180deg,#fff,var(--cyan-tint))}
+.prices{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;align-items:stretch}
+.price{background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);padding:34px 30px;display:flex;flex-direction:column;position:relative}
+.price.feat{background:linear-gradient(165deg,var(--navy),var(--navy-deep));color:#fff;border:0;box-shadow:var(--shadow-lg);transform:translateY(-10px)}
+.price .pname{font-family:'Rubik';font-weight:800;font-size:1.35rem}
+.price .pdesc{color:var(--muted);margin:8px 0 20px;font-size:1rem;min-height:48px}
+.price.feat .pdesc{color:rgba(255,255,255,.82)}
+.price .amt{font-family:'Rubik';font-weight:800;font-size:3rem;line-height:1;letter-spacing:-.03em}
+.price .amt small{font-family:'Assistant';font-weight:600;font-size:1rem;color:var(--muted)}
+.price.feat .amt small{color:rgba(255,255,255,.72)}
+.price .vat{font-size:.85rem;color:var(--muted);margin-top:7px}
+.price.feat .vat{color:rgba(255,255,255,.65)}
+.pfeatures{list-style:none;margin:22px 0;display:flex;flex-direction:column;gap:12px;font-size:1rem}
+.pfeatures li{display:flex;gap:10px;align-items:flex-start}
+.pfeatures .tk{flex:none;width:22px;height:22px;border-radius:6px;background:var(--cyan-soft);color:var(--cyan-ink);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.78rem;margin-top:2px}
+.price.feat .pfeatures .tk{background:rgba(8,192,248,.22);color:var(--cyan-2)}
+.price .save{align-self:flex-start;background:var(--grad-soft);color:var(--ink);font-family:'Rubik';font-weight:700;border-radius:999px;padding:5px 14px;font-size:.9rem;margin-bottom:6px}
+.price .btn{margin-top:auto;width:100%}
+.ribbon{position:absolute;top:-13px;inset-inline-start:28px;background:var(--grad-soft);color:var(--ink);font-family:'Rubik';font-weight:700;font-size:.85rem;border-radius:999px;padding:6px 16px;box-shadow:var(--shadow-sm)}
+
+/* STEPS */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.step{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:32px 28px;position:relative}
+.step .n{font-family:'Rubik';font-weight:800;font-size:1.15rem;width:48px;height:48px;border-radius:14px;background:var(--grad);color:#fff;display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+.step h3{font-size:1.32rem;font-weight:700;margin-bottom:7px}
+.step p{color:var(--muted);font-size:1.05rem}
+
+/* ROADMAP */
+.road{background:linear-gradient(160deg,var(--navy),var(--navy-deep));color:#fff}
+.road .kicker{background:rgba(8,192,248,.16);color:var(--cyan-2)}
+.road h2{color:#fff}
+.road .dek{color:rgba(255,255,255,.72)}
+.rlist{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.ritem{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.13);border-radius:var(--r);padding:28px}
+.ritem .tag{display:inline-block;background:var(--grad-soft);color:var(--ink);font-family:'Rubik';font-weight:700;font-size:.78rem;border-radius:999px;padding:4px 13px;margin-bottom:15px}
+.ritem h3{font-size:1.28rem;font-weight:700;margin-bottom:8px;color:#fff}
+.ritem p{color:rgba(255,255,255,.74);font-size:1.02rem}
+
+/* FAQ */
+.faq{max-width:820px;margin:0 auto}
+details.q{background:#fff;border:1px solid var(--line);border-radius:14px;margin-bottom:14px;overflow:hidden;transition:border-color .15s}
+details.q[open]{border-color:var(--cyan);box-shadow:var(--shadow-sm)}
+details.q summary{list-style:none;cursor:pointer;padding:22px 24px;font-family:'Rubik';font-weight:600;font-size:1.12rem;display:flex;align-items:center;justify-content:space-between;gap:16px}
+details.q summary::-webkit-details-marker{display:none}
+details.q summary .ar{flex:none;width:28px;height:28px;border-radius:8px;background:var(--cyan-soft);color:var(--cyan-ink);display:flex;align-items:center;justify-content:center;font-weight:800;transition:transform .2s}
+details.q[open] summary .ar{transform:rotate(45deg)}
+details.q .a{padding:0 24px 22px;color:var(--muted);font-size:1.06rem}
+
+/* FINAL */
+.final{text-align:center;background:radial-gradient(760px 420px at 50% 0%,var(--cyan-soft),#fff 70%)}
+.final h2{font-size:clamp(2.1rem,4.4vw,3.2rem);max-width:20ch;margin:0 auto}
+.final p{color:var(--muted);font-size:1.25rem;max-width:46ch;margin:20px auto 0;font-weight:500}
+.final .btn{margin-top:34px}
+.final .fine{margin-top:16px;font-size:.95rem;color:var(--muted)}
+.final .cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:34px}
+.final .cta-row .btn{margin-top:0}
+.price-note{text-align:center;margin-top:26px;font-size:1rem;color:var(--muted)}
+
+/* FOOTER */
+footer{background:var(--ink);color:rgba(255,255,255,.72);padding:52px 0 38px}
+.foot-top{display:flex;justify-content:space-between;align-items:flex-start;gap:30px;flex-wrap:wrap;padding-bottom:30px;border-bottom:1px solid rgba(255,255,255,.12)}
+.foot-brand .wm{font-family:'Rubik';font-weight:800;font-size:1.5rem;color:#fff}
+.foot-brand .wm b{color:var(--cyan-2)}
+.foot-brand p{font-size:.98rem;margin-top:8px;max-width:34ch}
+.foot-links{display:flex;gap:44px;flex-wrap:wrap}
+.foot-col h4{font-family:'Rubik';font-weight:600;font-size:.9rem;color:#fff;margin-bottom:12px}
+.foot-col a{display:block;font-size:.96rem;margin-bottom:8px;color:rgba(255,255,255,.7)}
+.foot-col a:hover{color:var(--cyan-2)}
+.foot-bot{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding-top:22px;font-size:.9rem}
+
+/* RESPONSIVE */
+@media(max-width:920px){
+  section{padding:74px 0}
+  .hero{padding:52px 0 68px}
+  .hero-grid,.mod{grid-template-columns:1fr;gap:44px}
+  .mod.rev .panel{order:2}
+  .stage{min-height:420px;margin-top:8px}
+  .problems{grid-template-columns:1fr}
+  .ba{grid-template-columns:1fr}
+  .prices{grid-template-columns:1fr;max-width:430px;margin-inline:auto}
+  .price.feat{transform:none}
+  .steps,.rlist{grid-template-columns:1fr}
+  .flow{flex-direction:column}
+  .flow-op{transform:rotate(90deg)}
+  .nav-links{display:none}
+  .nav-links.open{display:flex;position:absolute;top:74px;inset-inline:0;background:#fff;flex-direction:column;align-items:flex-start;padding:20px 24px;gap:16px;border-bottom:1px solid var(--line);box-shadow:var(--shadow)}
+  .nav-toggle{display:flex}
+  .foot-top{flex-direction:column}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top" aria-label="קוויק אנד גו, מבית QwikPage">
+      <img src="mark.png" alt="קוויק אנד גו" class="mark">
+      <span class="prod">קוויק אנד גו</span>
+    </a>
+    <nav class="nav-links" id="menu">
+      <a class="link" href="#modules">מה המערכת עושה</a>
+      <a class="link" href="#how">איך מתחילים</a>
+      <a class="link" href="#pricing">מסלולים</a>
+      <a class="link" href="#faq">שאלות</a>
+      <a class="btn btn-primary" href="https://qwikpage.digitengo.com/register" target="_blank" rel="noopener">התחילו בחינם</a>
+    </nav>
+    <button class="nav-toggle" aria-label="תפריט" onclick="document.getElementById('menu').classList.toggle('open')">☰</button>
+  </div>
+</header>
+
+<a id="top"></a>
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow"><span class="dot"></span>מבית QwikPage, סוכנות דיגיטל</span>
+      <h1>העסק שלך עסוק מכדי לשווק.<br><span class="grad-text">קוויק אנד גו עושה את זה בשבילך.</span></h1>
+      <p class="sub">קוויק אנד גו כותב, מעצב ומפרסם לעסק שלך <b>תוכן קבוע בעברית אנושית</b>, ובמקביל מאתר <b>לידים חמים בפייסבוק בזמן אמת</b>. אתה ממשיך לעבוד, והשיווק רץ ברקע.</p>
+      <div class="hero-cta">
+        <a href="https://qwikpage.digitengo.com/register" target="_blank" rel="noopener" class="btn btn-primary">התחילו 7 ימים בחינם</a>
+        <a href="https://calendar.app.google/FaMDeLT3YvKL6XwR7" target="_blank" rel="noopener" class="btn btn-ghost">שיחת התאמה קצרה</a>
+      </div>
+      <p class="hero-note"><span class="c">✓</span> 7 ימים חינם, בלי כרטיס אשראי מראש ובלי התחייבות.</p>
+    </div>
+
+    <div class="stage">
+      <div class="blob"></div>
+      <div class="cal-chip">
+        <div class="t"><span>לוח התוכן החודשי</span><b>8/8</b></div>
+        <div class="cal-grid">
+          <i></i><i class="on"></i><i></i><i class="on"></i><i></i><i></i><i class="on"></i>
+          <i class="on"></i><i></i><i></i><i class="on"></i><i></i><i class="on"></i><i></i>
+          <i></i><i class="on"></i><i></i><i></i><i class="on"></i><i></i><i class="on"></i>
+        </div>
+      </div>
+      <div class="post">
+        <div class="post-hd">
+          <div class="post-logo">ע</div>
+          <div class="meta"><b>העמוד של העסק שלך</b><span>פורסם אוטומטית · היום 09:00</span></div>
+        </div>
+        <div class="post-img"><div class="ph">3 סימנים שהגיע<br>הזמן לחדש את המטבח</div></div>
+        <div class="post-cap">
+          מטבח טוב עובד בשקט. כשהוא מתחיל לחרוק, כדאי להקשיב.
+          <div class="tags">#שיפוצים #מטבחים #השרון</div>
+        </div>
+        <div class="post-foot">כתיבה ועיצוב אוטומטי <span class="pub-badge"><span class="d"></span>פורסם</span></div>
+      </div>
+      <div class="lead-chip">
+        <div class="rad"></div>
+        <div><div class="lt">ליד חם זוהה בפייסבוק</div><div class="lb">הפוסט נשלח ישירות אליך</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="maker">
+  <div class="wrap maker-in">
+    <span>נבנה ומופעל בתוך סוכנות דיגיטל שעובדת עם עסקים מקומיים כל יום</span>
+  </div>
+</div>
+
+<section id="problem">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">מוכר לך?</span>
+      <h2 class="big">איפה השיווק של העסק נתקע</h2>
+    </div>
+    <div class="problems">
+      <div class="prob">
+        <div class="ic">📄</div>
+        <h3>העמוד עומד ריק</h3>
+        <p>אין זמן לחשוב על רעיון, לכתוב, לעצב ולהעלות. אז הפוסט האחרון בעמוד שלך הוא מלפני חודשיים.</p>
+      </div>
+      <div class="prob">
+        <div class="ic">🤖</div>
+        <h3>כלים גנריים שנשמעים רובוטיים</h3>
+        <p>ChatGPT יכתוב לך פוסט, ואז תבלה עוד חצי שעה בעריכה ובתיקון של עברית שנשמעת מתורגמת מאנגלית.</p>
+      </div>
+      <div class="prob">
+        <div class="ic">⏱️</div>
+        <h3>לקוחות חמים שמתפספסים</h3>
+        <p>מישהו בקבוצה מבקש בדיוק את השירות שלך. עד שתראה את זה בערב, כבר ענו לו חמישה אחרים.</p>
+      </div>
+      <div class="prob">
+        <div class="ic">🧩</div>
+        <h3>שיווק שמתפזר בין עשרה כלים</h3>
+        <p>כלי לכתיבה, כלי לעיצוב, אפליקציה לתזמון, קבוצות ללידים. כלום לא מדבר עם כלום.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sol">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="kicker">הפתרון</span>
+      <h2 class="big">שתי מערכות. מנוע צמיחה אחד.</h2>
+      <p class="dek">קוויק אנד גו מחליף את העבודה הידנית בשני מודולים שרצים לבד. אחד בונה נוכחות, השני מביא לקוחות.</p>
+    </div>
+    <div class="flow">
+      <div class="flow-box"><span class="n">1</span>תוכן שמתפרסם לבד</div>
+      <div class="flow-op">+</div>
+      <div class="flow-box"><span class="n">2</span>לידים חמים בזמן אמת</div>
+      <div class="flow-op">=</div>
+      <div class="flow-box out"><span class="n">✓</span>מנוע צמיחה מלא</div>
+    </div>
+  </div>
+</section>
+
+<section class="value">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="kicker">למה קוויק אנד גו</span>
+      <h2 class="big">הקמת עסק כדי לעשות את מה שאתה הכי טוב בו.<br><span class="grad-text">לא כדי לרדוף אחרי פוסטים ולידים.</span></h2>
+      <p class="dek">אבל השיווק לא לוקח הפסקות. הוא צריך להימשך כל יום, גם כשאתה שקוע עד מעל הראש בעבודה עצמה. קוויק אנד גו לוקח על עצמו את החלק המתיש שלא נגמר, ומחזיר לך את הזמן לעשות את מה שבשבילו הקמת את העסק.</p>
+    </div>
+    <div class="value-callout">
+      <p class="vc-line">סוכנות או פרילנסר לניהול השיווק עולים <b>אלפי שקלים בחודש</b>. קוויק אנד גו עולה <span class="hl">חלק קטן מזה</span>, ולא לוקח חופשות.</p>
+    </div>
+  </div>
+</section>
+
+<section id="modules">
+  <div class="wrap">
+    <!-- MODULE 1: CONTENT (primary) -->
+    <div class="mod">
+      <div>
+        <span class="kicker">מודול תוכן וסושיאל · המנוע המרכזי</span>
+        <h2>נוכחות קבועה, בלי שתשב על זה</h2>
+        <p class="lead">המערכת מייצרת עבורך תוכן שלם, טקסט ועיצוב, שמתאים לעסק ולקהל שלך. התוצאה היא עמוד שחי, בלי שתרים אצבע.</p>
+        <ul class="mlist">
+          <li><span class="tk">✓</span>8 פוסטים בחודש, כתובים ומעוצבים במיוחד לעסק שלך.</li>
+          <li><span class="tk">✓</span>עברית שיווקית לאוזן ישראלית. לא תרגום מאנגלית ולא נוסח גנרי.</li>
+          <li><span class="tk">✓</span>תמונות וסרטונים ברמת סוכנות, בזהות הוויזואלית של העסק.</li>
+          <li><span class="tk">✓</span>פרסום אוטומטי לפייסבוק ולאינסטגרם. טיקטוק בדרך.</li>
+        </ul>
+      </div>
+      <div class="panel tint">
+        <div class="plabel"><span class="lv"></span>לוח התוכן שלך, מנוהל אוטומטית</div>
+        <div class="planner">
+          <div class="ph"><span class="dot"></span>הפוסטים של החודש</div>
+          <div class="pl-row"><div class="pl-thumb"></div><div class="txt"><b>3 סימנים שהגיע הזמן לחדש את המטבח</b><span>פוסט תמונה · פייסבוק ואינסטגרם</span></div><span class="pl-tag done">פורסם</span></div>
+          <div class="pl-row"><div class="pl-thumb v2"></div><div class="txt"><b>איך בוחרים בעל מקצוע ולא מתחרטים</b><span>קרוסלה · אינסטגרם</span></div><span class="pl-tag done">פורסם</span></div>
+          <div class="pl-row"><div class="pl-thumb v3"></div><div class="txt"><b>הטעות שרוב בעלי הבתים עושים בשיפוץ</b><span>סרטון קצר · טיקטוק</span></div><span class="pl-tag sched">תוזמן למחר</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODULE 2: LEADS -->
+    <div class="mod rev">
+      <div class="panel dark">
+        <div class="plabel"><span class="lv"></span>המערכת עובדת, בזמן אמת</div>
+        <div class="mini-alert">
+          <div class="ma-top"><span class="d"></span>אזור הצפון · לפני דקה</div>
+          <div class="ma-txt">"ממליצים על חשמלאי זמין לסוף השבוע?"</div>
+          <div class="ma-bot"><span class="ma-tag">ליד פוטנציאלי</span><span class="ma-act">לפתוח את הפוסט ←</span></div>
+        </div>
+        <div class="mini-alert">
+          <div class="ma-top"><span class="d"></span>גוש דן · לפני 6 דקות</div>
+          <div class="ma-txt">"מחפשת מעצבת גבות טובה באזור, מישהי מכירה?"</div>
+          <div class="ma-bot"><span class="ma-tag">ליד פוטנציאלי</span><span class="ma-act">להגיב ראשון ←</span></div>
+        </div>
+      </div>
+      <div>
+        <span class="kicker">מודול לידים</span>
+        <h2>לדוג את הלקוח לפני כולם</h2>
+        <p class="lead">המערכת סורקת קבוצות פייסבוק ברקע ומזהה בדיוק את הרגע שבו מישהו מחפש את מה שאתה מוכר.</p>
+        <ul class="mlist">
+          <li><span class="tk">✓</span>ניטור בזמן אמת של בקשות המלצה וחיפושים בקבוצות.</li>
+          <li><span class="tk">✓</span>התראה ברגע שמישהו מחפש, לא שעתיים אחרי שכבר סגרו עם מישהו אחר.</li>
+          <li><span class="tk">✓</span>אתה הראשון שמגיב. בלידים חמים, זה בדרך כלל מי שסוגר.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="compare">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="kicker">למה לא פשוט לבד</span>
+      <h2 class="big">החיים של העסק, לפני ואחרי</h2>
+    </div>
+    <div class="ba">
+      <div class="ba-card before">
+        <div class="ba-h"><div class="ba-badge">✕</div><div class="ttl">בלי קוויק אנד גו</div></div>
+        <ul class="ba-list">
+          <li><span class="m">✕</span>העמוד מתעדכן פעם בחודשיים, כשנזכרים.</li>
+          <li><span class="m">✕</span>כל פוסט דורש פרומפט, עריכה ותיקון עברית מתורגמת.</li>
+          <li><span class="m">✕</span>לידים בקבוצות מתגלים שעות אחרי שכבר ענו ללקוח.</li>
+          <li><span class="m">✕</span>חמישה כלים נפרדים שאף אחד לא מדבר עם השני.</li>
+        </ul>
+      </div>
+      <div class="ba-card after">
+        <div class="ba-h"><div class="ba-badge">✓</div><div class="ttl">עם קוויק אנד גו</div></div>
+        <ul class="ba-list">
+          <li><span class="m">✓</span>8 פוסטים בחודש שמתפרסמים לבד, בלי שתיגע.</li>
+          <li><span class="m">✓</span>עברית שיווקית מוכנה לפרסום, בטון של העסק שלך.</li>
+          <li><span class="m">✓</span>התראה על ליד חם בזמן אמת, ואתה ראשון להגיב.</li>
+          <li><span class="m">✓</span>הכל במערכת אחת. גם התוכן וגם הלידים.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing" class="pricing">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="kicker">מסלולים</span>
+      <h2 class="big">תמחור שקוף, בלי הפתעות</h2>
+      <p class="dek">מתחילים עם מה שהעסק צריך עכשיו, ומשדרגים מתי שרוצים.</p>
+    </div>
+    <div class="prices">
+      <div class="price">
+        <div class="pname">תוכן</div>
+        <div class="pdesc">נוכחות קבועה בסושיאל, על טייס אוטומטי.</div>
+        <div class="amt">₪499<small> / חודש</small></div>
+        <div class="vat">לא כולל מע"מ</div>
+        <ul class="pfeatures">
+          <li><span class="tk">✓</span>8 פוסטים חודשיים, טקסט וויז'ואל</li>
+          <li><span class="tk">✓</span>עברית שיווקית בטון של העסק</li>
+          <li><span class="tk">✓</span>תזמון ופרסום אוטומטי ב-Meta</li>
+        </ul>
+        <a href="https://qwikpage.digitengo.com/register" target="_blank" rel="noopener" class="btn btn-ghost">התחילו בחינם</a>
+      </div>
+
+      <div class="price">
+        <div class="pname">לידים</div>
+        <div class="pdesc">איתור לקוחות חמים בפייסבוק, בזמן אמת.</div>
+        <div class="amt">₪499<small> / חודש</small></div>
+        <div class="vat">לא כולל מע"מ</div>
+        <ul class="pfeatures">
+          <li><span class="tk">✓</span>ניטור קבוצות פייסבוק אוטומטי</li>
+          <li><span class="tk">✓</span>התראה על כל ליד רלוונטי</li>
+          <li><span class="tk">✓</span>סינון הפוסטים הרלוונטיים לתחום שלך</li>
+        </ul>
+        <a href="https://qwikpage.digitengo.com/register" target="_blank" rel="noopener" class="btn btn-ghost">התחילו בחינם</a>
+      </div>
+
+      <div class="price feat">
+        <span class="ribbon">הכי משתלם</span>
+        <div class="pname">פרו</div>
+        <div class="pdesc">שני המודולים יחד. מעטפת צמיחה מלאה.</div>
+        <div class="amt">₪899<small> / חודש</small></div>
+        <div class="vat">לא כולל מע"מ</div>
+        <ul class="pfeatures">
+          <li><span class="tk">✓</span>כל מה שיש בתוכן ובלידים</li>
+          <li><span class="tk">✓</span>אורגני ולידים במערכת אחת</li>
+          <li><span class="tk">✓</span>10% הנחה על שני המודולים</li>
+        </ul>
+        <span class="save">חיסכון של ₪99 בחודש</span>
+        <a href="https://qwikpage.digitengo.com/register" target="_blank" rel="noopener" class="btn btn-primary">התחילו בחינם</a>
+      </div>
+    </div>
+    <p class="price-note">כל המסלולים כוללים 7 ימי ניסיון חינם, בלי כרטיס אשראי מראש.</p>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="kicker">ההתחלה</span>
+      <h2 class="big">עולים לאוויר בשלושה צעדים</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="n">1</div>
+        <h3>אפיון מהיר</h3>
+        <p>עשר דקות שיחה. מגדירים תחום, קהל, טון ומילות המפתח של העסק.</p>
+      </div>
+      <div class="step">
+        <div class="n">2</div>
+        <h3>חיבור נכסים</h3>
+        <p>מחברים את חשבונות הפייסבוק והאינסטגרם. חיבור קצר ומאובטח.</p>
+      </div>
+      <div class="step">
+        <div class="n">3</div>
+        <h3>המערכת עולה לאוויר</h3>
+        <p>קוויק אנד גו כותב, מפרסם ומאתר לידים לבד. אתה חוזר לעבודה.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="road">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="kicker">מה בדרך</span>
+      <h2 class="big">כבר בפיתוח</h2>
+      <p class="dek">המערכת ממשיכה לגדול, וכל לקוח מקבל את התוספות ברגע שהן עולות.</p>
+    </div>
+    <div class="rlist">
+      <div class="ritem"><span class="tag">בקרוב</span><h3>טיקטוק</h3><p>ייצור ופרסום אוטומטי של תוכן וידאו, ישירות לטיקטוק.</p></div>
+      <div class="ritem"><span class="tag">בקרוב</span><h3>קמפיינים ממומנים</h3><p>חיבור למנהל המודעות, לסנכרון בין התוכן האורגני לממומן.</p></div>
+      <div class="ritem"><span class="tag">בקרוב</span><h3>דשבורד תוצאות</h3><p>מעקב בזמן אמת אחרי מעורבות, פניות והחזר ההשקעה.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="kicker">שאלות נפוצות</span>
+      <h2 class="big">מה שכדאי לדעת לפני שמתחילים</h2>
+    </div>
+    <div class="faq">
+      <details class="q" open><summary>איך עובד הניסיון בחינם?<span class="ar">+</span></summary><div class="a">מתחילים עם 7 ימים חינם, בלי להזין כרטיס אשראי מראש. מתנסים במערכת על העסק שלך, ורק אם זה מתאים ממשיכים.</div></details>
+      <details class="q"><summary>כמה מהר אפשר להתחיל?<span class="ar">+</span></summary><div class="a">אחרי אפיון קצר של כעשר דקות וחיבור חשבונות הפייסבוק והאינסטגרם, המערכת מתחילה לעבוד. אין התקנה מסובכת ואין צורך בצוות שיווק.</div></details>
+      <details class="q"><summary>העברית באמת ברמה, או שזה נשמע כמו רובוט?<span class="ar">+</span></summary><div class="a">התוכן נכתב בעברית שיווקית שמותאמת לאוזן ישראלית ולטון של העסק שלך, לא תרגום מאנגלית ולא נוסח גנרי. זו בדיוק הנקודה שבגללה בנינו את המערכת בתוך סוכנות ולא כמוצר טכנולוגי כללי.</div></details>
+      <details class="q"><summary>אני צריך ידע טכני או ניסיון בשיווק?<span class="ar">+</span></summary><div class="a">לא. האפיון קצר, החיבור פשוט, ומשם המערכת עובדת לבד. היא נבנתה בשביל בעלי עסקים שאין להם זמן להתעסק בשיווק.</div></details>
+      <details class="q"><summary>המערכת מתאימה לעסק מקומי קטן?<span class="ar">+</span></summary><div class="a">כן. עסקים מקומיים הם בדיוק הקהל שבשבילו נבנתה המערכת. מי שנותן שירות מעולה, אבל לא מספיק להראות את זה ברשת ולתפוס לקוחות בזמן.</div></details>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="final">
+  <div class="wrap">
+    <h2>רוצים לראות את זה עובד על העסק שלכם?</h2>
+    <p>אפשר להתחיל ב-7 ימי ניסיון חינם, בלי כרטיס אשראי. ואם בא לכם לדבר קודם, נשמח לשיחת התאמה קצרה.</p>
+    <div class="cta-row">
+      <a href="https://qwikpage.digitengo.com/register" target="_blank" rel="noopener" class="btn btn-primary">התחילו 7 ימים בחינם</a>
+      <a href="https://calendar.app.google/FaMDeLT3YvKL6XwR7" target="_blank" rel="noopener" class="btn btn-ghost">שיחת התאמה קצרה</a>
+    </div>
+    <p class="fine">בלי כרטיס אשראי מראש. בלי התחייבות.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <div class="wm">קוויק אנד גו</div>
+        <p>מערכת AI לצמיחה בדיגיטל, מבית QwikPage. נבנתה בתוך סוכנות שעובדת עם עסקים כל יום.</p>
+      </div>
+      <div class="foot-links">
+        <div class="foot-col">
+          <h4>המערכת</h4>
+          <a href="#modules">מודול תוכן</a>
+          <a href="#modules">מודול לידים</a>
+          <a href="#pricing">מסלולים</a>
+        </div>
+        <div class="foot-col">
+          <h4>מידע</h4>
+          <a href="#how">איך מתחילים</a>
+          <a href="#faq">שאלות נפוצות</a>
+          <a href="#contact">שיחת התאמה</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr"></span> QwikPage. כל הזכויות שמורות.</span>
+      <span>קוויק אנד גו הוא מוצר של QwikPage.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+document.querySelectorAll('#menu a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('menu').classList.remove('open')})});
+</script>
+</body>
+</html>
